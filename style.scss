@@ -1,0 +1,12 @@
+@mixin icon ($boyut, $yuvarlak){
+    width: $boyut;
+    height: $boyut;
+    @if ($yuvarlak) {
+        border-radius: $boyut / 2;
+
+    }
+}
+.container{
+    float: left;
+    @include icon(40px, true);
+}
