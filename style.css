@@ -1,7 +1,108 @@
-.container {
-  float: left;
-  width: 40px;
+@charset "UTF-8";
+/* @mixin icon ($boyut, $yuvarlak){
+    width: $boyut;
+    height: $boyut;
+    @if ($yuvarlak) {
+        border-radius: $boyut / 2;
+
+    }
+}
+.container{
+    float: left;
+    @include icon(40px, true);
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/*****************************************/
+/* @mixin kenarlik ($yön, $tür, $renk) {
+    @if ($yön == "1"){
+        border-left: 3px $tür $renk;
+    }
+    @elseif ($yön == "r") {
+        border-right: 3px $tür $renk;
+    }
+    @elseif ($yön == "t") {
+        border-right: 3px $tür $renk;
+    }
+    @elseif ($yön == "t") {
+        border-right: 3px $tür $renk;
+    }
+    @else {
+        border: 3px $tür $renk;
+    }
+}
+
+.container{
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include kenarlik(sd, solid, #000)
+} */
+/*****************************************/
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background-color: orange;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  border: 1px solid #ff0000a1;
+}
+
+.item-1 {
+  width: 100px;
+  height: 20px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.item-2 {
+  width: 200px;
   height: 40px;
-  border-radius: 20px;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+
+.item-3 {
+  width: 300px;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 10px;
+}
+
+.item-4 {
+  width: 400px;
+  height: 80px;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+.item-5 {
+  width: 500px;
+  height: 100px;
+  background-color: red;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
