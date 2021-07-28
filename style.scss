@@ -77,7 +77,8 @@ $dizi: $color1, $color2, $color3, $color4, $color5;
     .item-#{$i}{
         width: 100px *$i;
         height: 20px *$i;
-        background-color: nth($dizi, $i);
+        background-color: nth($dizi, $i); 
+        // dizideki secilmis elemani uygular
         margin-bottom: 10px;
     }
 }
